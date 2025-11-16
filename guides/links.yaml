@@ -4,3 +4,5 @@ mocking:
   order: 1
 shared-contexts:
   order: 2
+rake-integration:
+  order: 3

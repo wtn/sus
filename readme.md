@@ -29,9 +29,15 @@ Please see the [project documentation](https://socketry.github.io/sus/) for more
 
   - [Shared Test Behaviors and Fixtures](https://socketry.github.io/sus/guides/shared-contexts/index) - This guide explains how to use shared test contexts and fixtures in sus to reduce duplication and ensure consistent test behavior across your test suite.
 
+  - [Rake Integration](https://socketry.github.io/sus/guides/rake-integration/index) - This guide explains how to run sus tests from a Rake task.
+
 ## Releases
 
 Please see the [project releases](https://socketry.github.io/sus/releases/index) for all releases.
+
+### Unreleased
+
+  - Add `Sus::Rake::TestTask` for running tests from a Rake task.
 
 ### v0.38.0
 

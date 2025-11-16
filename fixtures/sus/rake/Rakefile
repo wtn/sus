@@ -1,0 +1,22 @@
+# frozen_string_literal: true
+
+require "sus/rake"
+
+Sus::Rake::TestTask.new
+
+Sus::Rake::TestTask.new(:passing) do |task|
+	task.paths = ["test/passing.rb"]
+end
+
+Sus::Rake::TestTask.new(:failing) do |task|
+	task.paths = ["test/passing.rb", "extra/failing.rb"]
+end
+
+Sus::Rake::TestTask.new(:verbose) do |task|
+	task.paths = ["test/passing.rb"]
+	task.verbose = true
+end
+
+task :other do
+	puts "other task ran"
+end
